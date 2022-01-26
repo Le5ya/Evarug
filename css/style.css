@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
 html,
 body {
   font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
 }
 
 img {
@@ -27,6 +32,9 @@ ul > li {
   padding-top: 2.3rem;
   padding-bottom: 2.6rem;
   color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 63%;
 }
 .header__telephone-img {
   width: 2rem;
@@ -51,10 +59,84 @@ ul > li {
   display: flex;
   align-items: center;
 }
+.header__inst span {
+  line-height: 100%;
+}
 .header__telephone-img,
 .header__maps-img,
 .header__inst-img {
   margin-right: 1.5rem;
+}
+.main-display {
+  margin-top: 4.7rem;
+}
+.main-display__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-display__logo-img {
+  width: 10rem;
+  height: 6rem;
+  margin-right: 1.1rem;
+}
+.main-display__logo {
+  display: flex;
+  align-items: center;
+}
+.main-display__title {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 3.6rem;
+  line-height: 117%;
+}
+.main-display__nav {
+  display: flex;
+}
+.main-display__nav li {
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 117%;
+  text-align: center;
+}
+.main-display__nav li:not(:last-child) {
+  margin-right: 2.5rem;
+}
+.main-display__center {
+  display: flex;
+  justify-content: space-between;
+}
+.main-display__left {
+  padding-top: 19rem;
+}
+.main-display__right {
+  width: 53.3rem;
+  height: 68.6rem;
+}
+.main-display__header {
+  margin: 0;
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 118%;
+}
+.main-display__subheader {
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 117%;
+}
+.main-display__button {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 115%;
+  color: #fff;
+  outline: none;
+  text-align: center;
+  background: linear-gradient(95.2deg, #b90160 2.23%, #2e3192 99.51%);
+  border-radius: 7px;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
 }
 .footer {
   position: relative;
@@ -74,6 +156,9 @@ ul > li {
 }
 .footer__header {
   margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 114%;
 }
 .footer__decor-1 {
   position: absolute;
@@ -87,7 +172,12 @@ ul > li {
   position: absolute;
   width: 23.3rem;
   height: 23.4rem;
-  left: 80%;
+  left: 77%;
   top: 47%;
   transform: translate(-50%, -50%);
+}
+.footer__wrap li {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 114%;
 }
