@@ -110,6 +110,19 @@ ul > li {
   padding-top: 19rem;
 }
 .main-display__right {
+  position: relative;
+  margin-top: 21.8rem;
+  width: 74.5rem;
+  margin-left: -27.4rem;
+  padding-left: 14.4rem;
+  padding-right: 6.8rem;
+  height: 52.2rem;
+  background: url("../img/mat-right.png");
+  background-size: 100% 100%;
+}
+.main-display__right-img {
+  position: absolute;
+  margin-top: -7.6rem;
   width: 53.3rem;
   height: 68.6rem;
 }
