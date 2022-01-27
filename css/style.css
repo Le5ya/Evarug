@@ -185,8 +185,8 @@ h6 {
 }
 .review {
   margin-top: 6rem;
-  margin-bottom: 3rem;
-  max-height: 35.7rem;
+  /* margin-bottom: 6rem; */
+  max-height: 45.7rem;
   background: linear-gradient(
     94.31deg,
     rgba(212, 20, 90, 0.25) 0.96%,
@@ -198,9 +198,9 @@ h6 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 15rem;
+  min-height: 25rem;
   max-width: 53.6rem;
-  padding: 6.3rem 4.5rem 5rem 4.5rem;
+  /* padding: 6.3rem 4.5rem 5rem 4.5rem; */
   background: #fff;
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
   border-radius: 0.9rem;
@@ -268,6 +268,7 @@ h6 {
   padding-right: 12rem;
   padding-top: 17.2rem;
   padding-bottom: 8.4rem;
+  margin-top: 6.5rem;
 }
 .footer__inst-img {
   width: 3.3rem;
