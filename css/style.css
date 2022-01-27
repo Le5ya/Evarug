@@ -127,7 +127,19 @@ h6 {
   justify-content: space-between;
 }
 .main-display__left {
+  position: relative;
   padding-top: 19rem;
+}
+.main-display__left::after {
+  content: "";
+  display: block;
+  height: 47.2rem;
+  width: 39.7rem;
+  position: absolute;
+  top: 56%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  background: url("../img/lefttap.png");
 }
 .main-display__right {
   position: relative;
