@@ -184,8 +184,12 @@ h6 {
   cursor: pointer;
 }
 .review {
-  margin-top: 6rem;
-  /* margin-bottom: 6rem; */
+  padding: 0;
+}
+.review__slider {
+  margin-top: 3rem;
+  width: 100%;
+  padding-bottom: 4rem;
   max-height: 45.7rem;
   background: linear-gradient(
     94.31deg,
@@ -237,9 +241,7 @@ h6 {
   line-height: 117%;
   text-align: center;
 }
-/* .review__slide-text:hover {
-  overflow: visible;
-} */
+
 .review__slide-name {
   font-weight: 300;
   font-size: 1.2rem;
@@ -274,7 +276,6 @@ h6 {
   padding-right: 12rem;
   padding-top: 17.2rem;
   padding-bottom: 8.4rem;
-  margin-top: 6.5rem;
 }
 .footer__inst-img {
   width: 3.3rem;
