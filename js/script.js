@@ -7,13 +7,11 @@ const swiper = new Swiper('.swiper', {
   slideToClickedSlide: true,
   toggle: true,
   breakpoints: {
-      1300: {
-      slidesPerView: 3
-    },
-    800: {
+      1100: {
       slidesPerView: 2
     },
-    320: {
+   
+    768: {
       slidesPerView: 1
     }
   }
