@@ -200,7 +200,7 @@ h6 {
   flex-direction: column;
   min-height: 25rem;
   max-width: 53.6rem;
-  /* padding: 6.3rem 4.5rem 5rem 4.5rem; */
+  padding: 6.3rem 4.5rem 5rem 4.5rem;
   background: #fff;
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
   border-radius: 0.9rem;
@@ -230,17 +230,23 @@ h6 {
   background: linear-gradient(180deg, #e29bb5 -0.03%, #adaee6 100.01%);
 }
 .review__slide-text {
+  height: 6.5rem;
+  overflow: auto;
   font-weight: 300;
   font-size: 1.8rem;
   line-height: 117%;
   text-align: center;
 }
+/* .review__slide-text:hover {
+  overflow: visible;
+} */
 .review__slide-name {
   font-weight: 300;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 115%;
   padding-top: 2.9rem;
 }
+
 .review__slide-text:after {
   content: "";
   display: block;
