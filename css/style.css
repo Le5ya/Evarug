@@ -37,7 +37,7 @@ h6 {
   margin: 0;
 }
 .container {
-  width: 90%;
+  width: 120rem;
   margin: 0 auto;
 }
 .header {
@@ -94,6 +94,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 .main-display__logo-img {
   width: 10rem;
@@ -127,13 +128,16 @@ h6 {
   justify-content: space-between;
 }
 .main-display__left {
-  position: relative;
-  padding-top: 19rem;
-  background: url("../img/lefttap.png");
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("../img/lefttap.png") no-repeat;
+  background-position: bottom left -25px;
 }
 .main-display__right {
-  position: relative;
-  margin-top: 21.8rem;
+  /* position: relative; */
+  margin-top: 2.8rem;
   width: 74.5rem;
   margin-left: -27.4rem;
   padding-left: 14.4rem;
@@ -149,18 +153,19 @@ h6 {
   height: 68.6rem;
 }
 .main-display__header {
-  margin: 0;
+  margin-bottom: 1rem;
   font-weight: 900;
   font-size: 5rem;
   line-height: 118%;
 }
 .main-display__subheader {
-  margin-bottom: 0.5rem;
+  margin-bottom: 2.5rem;
   font-weight: 300;
   font-size: 2.4rem;
   line-height: 117%;
 }
 .main-display__button {
+  max-width: 17rem;
   font-weight: 900;
   font-size: 20px;
   line-height: 115%;
@@ -173,11 +178,71 @@ h6 {
   padding: 1.5rem 3rem;
   cursor: pointer;
 }
+.about {
+  padding-bottom: 200px;
+  background: url("../img/about.png");
+  background-repeat: no-repeat;
+  background-position: right 117% top 80%;
+}
+.about__header {
+  margin-bottom: 10rem;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 118%;
+  text-align: center;
+}
+.about__header span {
+  background: linear-gradient(
+    90deg,
+    rgba(185, 1, 96, 1) 0%,
+    rgba(61, 91, 245, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about__items {
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(3, 29%);
+  gap: 0 6.1rem;
+}
+.about__item {
+  /* width: 29%; */
+  box-shadow: 0 0 4rem rgba(184, 0, 95, 0.2);
+  border-radius: 0.9rem;
+  overflow: hidden;
+}
+
+.about__item-img {
+  width: 100%;
+  height: 21.5rem;
+}
+.about__item-img img {
+  object-fit: cover;
+}
+.about__item-description {
+  background: #fff;
+  padding: 5%;
+}
+
+.about__item-header {
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 117%;
+}
+.about__item-text {
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 114%;
+  color: #767676;
+}
 .review {
   padding: 0;
 }
 .review__slider {
   margin-top: 3rem;
+  margin-bottom: 3rem;
   width: 100%;
   padding-bottom: 4rem;
   max-height: 45.7rem;
@@ -263,7 +328,7 @@ h6 {
 .footer__wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-left: 12rem;
   padding-right: 12rem;
   padding-top: 17.2rem;
@@ -288,7 +353,7 @@ h6 {
 .footer__decor-1 {
   position: absolute;
   left: 10%;
-  top: 47%;
+  top: 42%;
   transform: translate(-50%, -50%);
   width: 11rem;
   height: 12.5rem;
@@ -296,9 +361,9 @@ h6 {
 .footer__decor-2 {
   position: absolute;
   width: 23.3rem;
-  height: 23.4rem;
-  left: 77%;
-  top: 47%;
+  height: 26.4rem;
+  left: 85%;
+  top: 45%;
   transform: translate(-50%, -50%);
 }
 .footer__wrap li {
@@ -389,7 +454,6 @@ h6 {
 }
 .modal__button {
   max-width: 17rem;
-  border: 2px solid red;
   cursor: pointer;
 }
 .modal__policy {
