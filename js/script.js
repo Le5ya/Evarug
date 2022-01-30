@@ -51,3 +51,4 @@ modalWindow.addEventListener('click', (e) => {
   
 
 });
+console.log(document.querySelector('.modal__items:last-child'))
