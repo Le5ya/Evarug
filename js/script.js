@@ -1,19 +1,24 @@
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 3,
+  slidesPerView: 1,
   loop: true,
   speed: 400,
   spaceBetween: 50,
-  centeredSlides: true,
+  centeredSlides: false,
   slideToClickedSlide: true,
   toggle: true,
+  slidesOffsetBefore: 140,
   breakpoints: {
-
+     768:      {
+      slidesPerView: 1,
+      slidesOffsetBefore: 10
+      
+    },
       1100: {
       slidesPerView: 2
     },
-   
-    400: {
-      slidesPerView: 1
+
+     1440: {
+        slidesPerView: 3
     }
   }
  
@@ -51,4 +56,7 @@ modalWindow.addEventListener('click', (e) => {
   
 
 });
-console.log(document.querySelector('.modal__items:last-child'))
+if(document.documentElement.scrollWidth <= 768) {
+  swiper.destroy();
+ 
+}

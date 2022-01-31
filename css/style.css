@@ -51,7 +51,7 @@ h6 {
   color: #fff;
   font-weight: 500;
   font-size: 1.5rem;
-  line-height: 63%;
+  line-height: 107%;
 }
 .header__telephone-img {
   width: 2rem;
@@ -185,7 +185,7 @@ h6 {
   background-position: right 117% top 80%;
 }
 .about__header {
-  margin-bottom: 10rem;
+  margin-bottom: 10.8rem;
   font-size: 5rem;
   font-weight: 400;
   line-height: 118%;
@@ -238,20 +238,21 @@ h6 {
   color: #767676;
 }
 .review {
-  padding: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
-.review__slider {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+
+.review__swiper {
   width: 100%;
   padding-bottom: 4rem;
+  padding-left: 0;
   max-height: 45.7rem;
+  overflow: hidden;
   background: linear-gradient(
     94.31deg,
     rgba(212, 20, 90, 0.25) 0.96%,
     rgba(46, 49, 146, 0.25) 104.83%
   );
-  overflow: hidden;
 }
 .review__slide {
   display: flex;
@@ -259,7 +260,7 @@ h6 {
   justify-content: center;
   flex-direction: column;
   min-height: 25rem;
-  max-width: 40rem;
+  max-width: 50rem;
   padding: 6.3rem 4.5rem 5rem 4.5rem;
   background: #fff;
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
@@ -474,4 +475,100 @@ h6 {
 }
 .active {
   display: flex;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 70rem;
+  }
+  .header {
+    font-size: 12px;
+    line-height: 133%;
+  }
+  .header__telephone-img {
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-top: -0.5rem;
+  }
+  .header__maps-img {
+    width: 1rem;
+    height: 2.7rem;
+  }
+  .header__telephone-img,
+  .header__maps-img,
+  .header__inst-img {
+    margin-right: 0.9rem;
+  }
+  .header__telephone-text span {
+    max-width: 13.9rem;
+  }
+  .main-display {
+    margin-top: 5.2rem;
+  }
+  .main-display__nav {
+    display: none;
+  }
+  .main-display__right {
+    margin-top: 0;
+    width: 51.5rem;
+    height: 36.8rem;
+  }
+  .main-display__right-img {
+    margin-top: -3.8rem;
+    width: 38rem;
+    height: 47.3rem;
+  }
+  .main-display__header {
+    margin-bottom: 0.5rem;
+    line-height: 113%;
+  }
+  .main-display__subheader {
+    margin-bottom: 0.5rem;
+  }
+  .main-display__button {
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 115%;
+    padding: 1.3rem 2.7rem;
+  }
+  .about__wrap {
+    margin-bottom: 0;
+  }
+  .about__header {
+    margin-bottom: 4.8rem;
+  }
+  .about__items {
+    display: block;
+  }
+  .about__item {
+    margin-bottom: 6.1em;
+  }
+  .about__item-img {
+    height: 19.5rem;
+  }
+  .review__swiper {
+    min-height: 110rem;
+    max-width: 76.9rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .review__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .review__slide {
+    margin-bottom: 10rem;
+  }
+  .swiper-slide__excess .review__slide-img {
+    display: none;
+  }
+
+  .review__wrapper:nth-child(3) {
+    border: 1px solid #000;
+  }
+  .footer__wrap {
+    padding: 0 9.5rem 1.3rem 4rem;
+  }
 }
