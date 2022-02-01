@@ -265,7 +265,6 @@ h6 {
   background: #fff;
   box-shadow: 0 0 3rem rgba(0, 0, 0, 0.25);
   border-radius: 0.9rem;
-  /* margin-right: -30rem; */
 }
 .review__wrapper {
   padding-top: 10rem;
@@ -554,7 +553,7 @@ h6 {
   .review__wrapper {
     display: flex;
     flex-direction: column;
-    padding-left: 10rem;
+    padding-left: 7rem;
     padding-bottom: 10rem;
   }
 
@@ -571,8 +570,26 @@ h6 {
   .footer__wrap {
     padding: 0 9.5rem 1.3rem 4rem;
   }
+  .modal__inner {
+    height: 49rem;
+  }
+  .modal__items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .modal__wrap-input {
+    height: 2.5rem;
+    padding-bottom: 0;
+  }
+  .modal__input-short {
+    height: 3rem;
+  }
+  .modal__message {
+    height: 8rem;
+  }
 }
-@media (max-width: 320px) {
+@media (max-width: 420px) {
   .container {
     width: 30.2rem;
     padding-left: 1rem;
@@ -656,8 +673,10 @@ h6 {
     min-width: 41rem;
     min-height: 120rem;
   }
+  .review__wrapper {
+    padding-left: 2rem;
+  }
   .review__slide {
-    margin-left: -7rem;
     width: 35rem;
     height: 27.1rem;
   }
@@ -684,5 +703,8 @@ h6 {
   .footer__telephone ul,
   .footer__adress ul {
     text-align: center;
+  }
+
+  .modal__inner {
   }
 }
